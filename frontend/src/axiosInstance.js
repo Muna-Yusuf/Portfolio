@@ -1,8 +1,16 @@
-// src/axiosInstance.js
-import axios from 'axios';
-
-const instance = axios.create({
-    baseURL: 'http://localhost:8000/', // Replace with your Django backend URL
-});
-
-export default instance;
+const sendEmail = async (formData) => {
+  try {
+    const response = await axios.post(
+      'http://127.0.0.1:8000/contact/send_contact_email/',
+      formData,
+      {
+        headers: {
+          'Content-Type': 'application/x-www-form-urlencoded',
+        },
+      }
+    );
+    console.log(response.data);
+  } catch (error) {
+    console.error('Error sending email:', error);
+  }
+};
