@@ -117,3 +117,6 @@ STATIC_URL = 'static/'
 
 # Default primary key field type
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# Get PORT from environment for Render
+PORT = os.getenv('PORT', '8000')
