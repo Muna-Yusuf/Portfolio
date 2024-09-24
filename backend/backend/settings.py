@@ -1,6 +1,7 @@
 from pathlib import Path
 from decouple import config
 import environ
+import os
 
 # Initialize environment variables
 env = environ.Env()
