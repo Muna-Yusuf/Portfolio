@@ -1,7 +1,0 @@
-{
-  "build": {
-    "scripts": {
-      "build": "npm install --prefix frontend && npm run build --prefix frontend && cp -r frontend/build/* backend/static/"
-    }
-  }
-}

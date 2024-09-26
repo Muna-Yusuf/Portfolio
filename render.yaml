@@ -1,0 +1,28 @@
+services:
+  - type: web
+    name: django-backend
+    env: python
+    plan: free
+    buildCommand: |
+      cd backend
+      pip install -r requirements.txt
+    startCommand: |
+      cd backend
+      gunicorn your_project_name.wsgi:application
+    envVars:
+      SECRET_KEY: your_secret_key
+      DEBUG: 'False'
+      ALLOWED_HOSTS: your_render_domain
+      DATABASE_URL: your_database_url # if you're using a database
+
+  - type: web
+    name: react-frontend
+    env: node
+    plan: free
+    buildCommand: |
+      cd frontend
+      npm install
+      npm run build
+    startCommand: |
+      cd frontend
+      serve -s build
