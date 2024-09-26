@@ -16,7 +16,7 @@ SECRET_KEY = config('SECRET_KEY', default='django-insecure-_xr8dz81kb)f96ruk2q_f
 DEBUG = config('DEBUG', default=False, cast=bool)
 
 # ALLOWED_HOSTS configuration
-ALLOWED_HOSTS = config('ALLOWED_HOSTS', default='127.0.0.1,localhost').split(',')
+ALLOWED_HOSTS = config('ALLOWED_HOSTS', default='127.0.0.1,localhost,m-portfolio-danf.onrender.com').split(',')
 
 # Email configuration
 EMAIL_HOST = env('EMAIL_HOST', default='smtp.mailjet.com')
@@ -71,7 +71,7 @@ MIDDLEWARE = [
 # CORS Configuration
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",  # For local development
-    "https://your-railway-app-url",  # Add your Railway app URL here once deployed
+    "https://m-portfolio-danf.onrender.com",  # Add your Render app URL here once deployed
 ]
 
 CORS_ALLOW_ALL_ORIGINS = False  # Set to False since we're using CORS_ALLOWED_ORIGINS
@@ -132,4 +132,3 @@ PORT = os.getenv('PORT', '8000')
 # Static files configuration for production (important for Railway)
 if not DEBUG:
     STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
-    MIDDLEWARE.insert(1, 'whitenoise.middleware.WhiteNoiseMiddleware')
