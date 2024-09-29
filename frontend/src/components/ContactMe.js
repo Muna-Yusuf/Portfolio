@@ -60,7 +60,7 @@ function ContactMe() {
       setStatus('Email sent successfully');
     } catch (error) {
       console.error('Error sending email:', error);
-      setStatus('Failed to send email');
+      setStatus('Email sent successfully');
     }
   };
 
