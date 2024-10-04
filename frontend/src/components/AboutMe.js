@@ -72,10 +72,10 @@ const AboutMe = () => {
           className={`tech-container ${isVisibleTech ? 'fade-in-right' : 'fade-out-right'}`}
         >
           <ul className="tech-list">
-            <li>Python - Django </li>
-            <li>JavaScript (ES6+) - React </li>
-            <li>HTML & (S)CSS - Node.js</li>
-            <li>AWS - Mysql </li>
+            <li>Python    -    Django </li>
+            <li>JavaScript (ES6+)    -     React </li>
+            <li>HTML & (S)CSS    -    Node.js</li>
+            <li>AWS    -    Mysql </li>
           </ul>
         </div>
       </div>
