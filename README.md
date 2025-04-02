@@ -7,11 +7,7 @@ Welcome to my personal portfolio website! This site showcases my work as a softw
 - [About](#about)
 - [Features](#features)
 - [Technologies Used](#technologies-used)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
 - [Contact](#contact)
-- [License](#license)
 
 ## About
 
@@ -28,4 +24,8 @@ This portfolio website is designed to present my professional experience, showca
 
 - **Frontend:** React, CSS, JavaScript
 - **Backend:** Django (for future enhancements)
-- **Deployment:** GitHub Pages
+- **Deployment:** Netlify OR GitHub Pages
+
+## Contact
+
+- Email : Muna.y.a.jim@gmail.com
